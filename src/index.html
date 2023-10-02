@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html data-theme="mytheme" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="/styles/output.css" rel="stylesheet" />
+    </head>
+    <body>
+        <dialog id="my_modal_4" class="modal">
+            <div class="modal-box w-11/12 max-w-5xl">
+                <h1 class="font-bold text-lg">
+                    <span class="text-primary">LEGISLATION</span> DOWNLOADS
+                </h1>
+                <ul class="py-4 flex flex-col gap-8 pl-8 pt-8">
+                    <a class="link hover:link-primary">Law Number 1.pdf</a>
+                    <a class="link hover:link-primary">Law Number 2.pdf </a>
+                    <a class="link hover:link-primary">Law Number 3.pdf</a>
+                </ul>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <button class="btn btn-secondary hover:btn-primary">
+                            Close
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <div id="home-page" class="h-screen flex flex-col">
+            <div class="navbar bg-base-100 lg:px-20 lg:pt-4">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16"
+                                />
+                            </svg>
+                        </label>
+                        <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                        >
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-xl"
+                        ><span class="text-primary">MVL</span> CONSULTANCY</a
+                    >
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="#services-page">SERVICES</a></li>
+                        <li>
+                            <a onclick="my_modal_4.showModal()">LEGISLATION</a>
+                        </li>
+                        <li><a href="#about-page">ABOUT</a></li>
+                        <li><a href="#faq-page">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn btn-primary" href="#contact-page"
+                        >CONTACT US</a
+                    >
+                </div>
+            </div>
+            <section
+                class="flex-grow eflex flex-col mx-20 mt-20 justify-center"
+            >
+                <h1 class="font-black text-7xl">
+                    <span class="text-primary">LIQUOR AND WEAPON LAW</span
+                    ><br />PROFESSIONAL
+                </h1>
+                <div class="flex justify-between items-center">
+                    <div
+                        class="flex flex-col text-lg font-light justify-center gap-8"
+                    >
+                        <p>
+                            Martell van Lill consultancy specializes liquor law
+                            and is therefore capable<br />
+                            of providing accurate advice and support providing
+                            the best<br />
+                            chance of satisfying the needs of all its
+                            clients.<br />
+                        </p>
+                        <button
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-md w-1/3 btn-secondary border-primary rounded-none hover:btn-primary hover:text-info"
+                            onclick="document.getElementById('contact-page').scrollIntoView();"
+                        >
+                            LET'S TALK
+                        </button>
+                    </div>
+                    <img
+                        src="assets/hero.jpg"
+                        alt="Legal legislation liquor law liquor license"
+                        class="w-1/3 self-end mr-36"
+                    />
+                </div>
+                <!-- <h3
+                    class="font-bold border-b mb-4 w-1/4 border-primary text-lg"
+                >
+                    News
+                </h3>
+                <div class="flex flex-row">
+                    <div class="card bg-secondary h-28 w-40 p-6 flex flex-col">
+                        <h2 class="font-bold">New law</h2>
+                        <p class="font-light">Download here</p>
+                    </div>
+                </div> -->
+            </section>
+        </div>
+        <section
+            id="services-page"
+            class="h-screen flex flex-col justify-start items-center"
+        >
+            <h1 class="font-black text-7xl w-full text-left px-12 pt-12">
+                <span class="text-primary">OUR</span> SERVICES
+            </h1>
+            <div class="join flex-grow m-32 hover:scale-105 transition-all">
+                <div class="join-item w-72 bg-primary text-base-100 p-6">
+                    <h2 class="font-bold">New Applications</h2>
+                    <div class="p-4 mt-6 flex flex-col gap-4">
+                        <div
+                            class="tooltip"
+                            data-tip="restaurants, pubs, night
+                            clubs, function venues, guest houses, hotels etc."
+                        >
+                            <p>On-consumption licenses</p>
+                        </div>
+                        <div
+                            class="tooltip"
+                            data-tip="bottle stores, wineries etc."
+                        >
+                            <p>Off-consumption licenses</p>
+                        </div>
+                        <p>
+                            On- and Off consumption licenses (under special
+                            circumstances facilities may be licensed to allow
+                            consumers to consume liquor on or off the premises)
+                        </p>
+                        <p>Micro-manufacturing (wineries or wine farms)</p>
+                        <p>
+                            Temporary licenses (by existing license holders to
+                            temporarily move the business to another location)
+                        </p>
+                        <p>
+                            Registration of macro-manufacturers and distributors
+                        </p>
+                    </div>
+                </div>
+                <div class="join-item w-72 bg-secondary text-info p-6">
+                    <h2 class="font-bold">New Applications</h2>
+                    <div class="p-4 mt-6 flex flex-col gap-4">
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                    </div>
+                    Button
+                </div>
+                <div class="join-item w-72 bg-primary text-base-100 p-6">
+                    <h2 class="font-bold">New Applications</h2>
+                    <div class="p-4 mt-6 flex flex-col gap-4">
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                    </div>
+                    Button
+                </div>
+                <div class="join-item w-72 bg-secondary text-info p-6">
+                    <h2 class="font-bold">New Applications</h2>
+                    <div class="p-4 mt-6 flex flex-col gap-4">
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                    </div>
+                    Button
+                </div>
+                <div class="join-item w-72 bg-primary text-base-100 p-6">
+                    <h2 class="font-bold">New Applications</h2>
+                    <div class="p-4 mt-6 flex flex-col gap-4">
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                        <p>Sousja and sousja sousja</p>
+                    </div>
+                    Button
+                </div>
+            </div>
+        </section>
+        <section id="about-page" class="h-screen flex flex-col">
+            <h1 class="font-black text-7xl w-full text-right px-24 pt-12">
+                <span class="text-primary">ABOUT</span> US
+            </h1>
+            <img
+                src="assets/about.jpg"
+                alt="Martell van Lill Liqour license
+                Weapon license Malmesbury Stellenbosch Cape Town Western Cape
+                Law Consultant"
+                class="w-1/2"
+            />
+        </section>
+        <section id="faq-page" class="h-screen flex flex-col mx-24">
+            <h1 class="font-black text-7xl w-full text-left pt-12 mb-12">
+                <span class="text-primary">FREQUENTLY</span> ASKED QUESTIONS
+            </h1>
+            <div class="flex flex-col flex-grow gap-4">
+                <div class="collapse collapse-arrow bg-secondary">
+                    <input
+                        type="radio"
+                        name="my-accordion-2"
+                        checked="checked"
+                        class="peer"
+                    />
+                    <div
+                        class="collapse-title text-xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        Which factors are most important when the Liquor
+                        Licensing Tribunal considers license applications?
+                    </div>
+                    <div
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        <p>
+                            The WCL Act determines that licences may only be
+                            granted if the existence thereof would be in the
+                            public interest. This is a strange concept as one
+                            would expect that as long as public interest is not
+                            prejudiced, a license may be issued. It is therefore
+                            important to note that the onus rests upon an
+                            applicant to convince the tribunal that the granting
+                            of a license would benefit public interest.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="collapse collapse-arrow bg-secondary focus:bg-primary"
+                >
+                    <input type="radio" name="my-accordion-2" class="peer" />
+                    <div
+                        class="collapse-title text-xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        What is public interest?
+                    </div>
+                    <div
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        <p>
+                            Public interest is not defined in the WCL Act.
+                            However, as consultants we are mostly guided by
+                            previous decisions by the tribunal and the reasons
+                            therefore. Public interest is a very wide concept
+                            and is not limited to specific factors. Communities
+                            are very diverse and depending on the dinamics of
+                            different towns, suburbs or settlements, the
+                            tribunal will focus on factors most relevant to such
+                            communities.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="collapse collapse-arrow bg-secondary focus:bg-primary"
+                >
+                    <input type="radio" name="my-accordion-2" class="peer" />
+                    <div
+                        class="collapse-title text-xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        Are applicants allowed to appear before the tribunal to
+                        verbally motivate applications?
+                    </div>
+                    <div
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        <p>
+                            Since the Covid 19 pandemic, the WCLA adopted a
+                            process which allowed the tribunal to consider
+                            applications mostly on written submissions. However,
+                            the Act allows the tribunal to call on applicants or
+                            interested parties to appear in person. It is
+                            foreseen that the tribunal will soon revert back to
+                            such process in an effort to ensure that a fair
+                            process is followed and the rules of fair
+                            administrative justice is acknowledged.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="collapse collapse-arrow bg-secondary focus:bg-primary"
+                >
+                    <input type="radio" name="my-accordion-2" class="peer" />
+                    <div
+                        class="collapse-title text-xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        Who may comment or object against a license application?
+                    </div>
+                    <div
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        <p>
+                            Any party who has an interest in the issuing of a
+                            licence may either support or object the granting
+                            thereof. Public participation is therefore
+                            essential. Entities/departments such as the police
+                            and municipalities must be served with copies of
+                            applications and decisions will not lightly be make
+                            without their inputs/recommendations. Other public
+                            entities or facilities as well as the general public
+                            are invited to provide comments, but in the absence
+                            thereof the tribunal may proceed without such
+                            comments.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="collapse collapse-arrow bg-secondary focus:bg-primary"
+                >
+                    <input type="radio" name="my-accordion-2" class="peer" />
+                    <div
+                        class="collapse-title text-xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        How long does it take for a license application to be
+                        considered?
+                    </div>
+                    <div
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        <p>
+                            Due to slight changes in legislation, applications
+                            can now be considered in a shorter period of time
+                            which on average is about 4 months. It must however
+                            be noted that many mistakes are being made by
+                            applicants during the application process which
+                            causes unnecessary delays and even the refusal of
+                            applications.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="collapse collapse-arrow bg-secondary focus:bg-primary"
+                >
+                    <input type="radio" name="my-accordion-2" class="peer" />
+                    <div
+                        class="collapse-title text-xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        Does a provincial liquor store/ off-sale licence allow
+                        both retail and distribution of liquor?
+                    </div>
+                    <div
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        <p>
+                            A Constitutional Court decision has confirmed that
+                            the selling of liquor from one licensee to another
+                            constitutes distribution which is strictly a
+                            National Government competency and is therefore
+                            regulated ito the National Liquor Act. Distributors
+                            therefore must apply to the National Liquor
+                            Authority permitting them to distribute liquor. On
+                            the other hand, retail is regulated provincially and
+                            each province is mandated to establish its own
+                            provincial legislation in this regard. Retail is
+                            defined as the selling liquor directly to the
+                            consumer. Businesses may therefore apply for both
+                            national and provincial licenses should they wish to
+                            distribute and retail liquor.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="collapse collapse-arrow bg-secondary focus:bg-primary"
+                >
+                    <input type="radio" name="my-accordion-2" class="peer" />
+                    <div
+                        class="collapse-title text-xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        Why must a license be displayed at the licensed
+                        business?
+                    </div>
+                    <div
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100"
+                    >
+                        <p>
+                            Firstly, it is an offence to purchase liquor knowing
+                            that such outlet is not licensed. The display of a
+                            licence provides comfort to patrons or customers
+                            when purchasing liquor at such premises. Secondly,
+                            not all law enforcement officials have access to
+                            WCLA data. They therefore often rely on the display
+                            of a license when attending to matters within their
+                            sphere of regulation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact-page" class="h-screen flex flex-col mx-24">
+            <h1 class="font-black text-7xl w-full text-left pt-12 mb-12">
+                <span class="text-primary">CONTACT</span> US
+            </h1>
+            <div class="flex flex-row justify-center items-center gap-8">
+                <form class="form-control flex flex-col gap-8 flex-grow">
+                    <input
+                        type="text"
+                        placeholder="Name"
+                        class="input w-full bg-secondary focus:bg-primary hover:border-primary focus:text-base-100 focus:placeholder:text-base-100 transition-all focus:outline-none"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        class="input w-full bg-secondary focus:bg-primary hover:border-primary focus:text-base-100 focus:placeholder:text-base-100 transition-all focus:outline-none"
+                    />
+                    <textarea
+                        class="textarea w-full h-52 bg-secondary focus:bg-primary hover:border-primary focus:text-base-100 focus:placeholder:text-base-100 transition-all focus:outline-none"
+                        placeholder="Message"
+                    ></textarea>
+                    <button class="btn btn-outline btn-primary">SEND</button>
+                </form>
+                <img
+                    src="assets/contact.jpg"
+                    alt="Lawyer Advokaat Martell van Lill MvL consultancy Weapon license liquor license consumption alcohol"
+                    class="w-1/2"
+                />
+            </div>
+        </section>
+        <footer
+            class="footer footer-center p-10 bg-secondary text-base-content rounded"
+        >
+            <nav class="grid grid-flow-col gap-4">
+                <a href="#services-page" class="link link-hover">Services</a>
+                <a onclick="my_modal_4.showModal()" class="link link-hover"
+                    >Legislation</a
+                >
+                <a href="#faq-page" class="link link-hover">FAQ</a>
+                <a href="#contact-page" class="link link-hover">Contact us</a>
+            </nav>
+            <nav>
+                <div class="grid grid-flow-col gap-4">
+                    <a
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            class="fill-current"
+                        >
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                            ></path></svg
+                    ></a>
+                    <a
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            class="fill-current"
+                        >
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                            ></path></svg
+                    ></a>
+                    <a
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            class="fill-current"
+                        >
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                            ></path></svg
+                    ></a>
+                </div>
+            </nav>
+            <aside>
+                <p>Copyright © 2023 - All right reserved by MvL Consultancy</p>
+            </aside>
+        </footer>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap"
+            rel="stylesheet"
+        />
+    </body>
+</html>
