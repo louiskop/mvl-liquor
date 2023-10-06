@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>MvL Liquor Law</title>
-        <link href="/styles/output.css" rel="stylesheet" />
+        <link href="./styles/output.css" rel="stylesheet" />
     </head>
     <body>
         <dialog id="my_modal_4" class="modal">
@@ -58,7 +58,7 @@
         </dialog>
         <div id="home-page" class="h-screen flex flex-col">
             <div class="navbar bg-base-100 lg:px-20 lg:pt-4">
-                <div class="navbar-start">
+                <div class="navbar-start max-sm:w-full flex-grow">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg
@@ -80,26 +80,27 @@
                             tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
                         >
-                            <li><a>Item 1</a></li>
+                            <li><a href="#services-page">SERVICES</a></li>
                             <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
+                                <a onclick="my_modal_4.showModal()"
+                                    >LEGISLATION</a
+                                >
                             </li>
-                            <li><a>Item 3</a></li>
+                            <li><a href="#about-page">ABOUT</a></li>
+                            <li><a href="#faq-page">FAQ</a></li>
                         </ul>
                     </div>
                     <div
-                        class="text-xl flex flex-row justify-start items-center"
+                        class="text-xl flex flex-row justify-start items-center flex-grow"
                     >
                         <img
                             src="assets/logobase.png"
                             alt="MVL Liquor law advisors mvl consultancy"
-                            class="h-1/6 w-1/6"
+                            class="sm:h-1/6 sm:w-1/6 h-1/3 w-1/3"
                         />
-                        <p id="logotext" class="text-xl">MvL LIQUOR LAW</p>
+                        <p id="logotext" class="text-base sm:text-xl flex-grow">
+                            MvL LIQUOR LAW
+                        </p>
                     </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -113,19 +114,23 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn btn-primary text-xl" href="#contact-page"
+                    <a
+                        class="btn btn-primary sm:text-xl text-xs"
+                        href="#contact-page"
                         >CONTACT US</a
                     >
                 </div>
             </div>
-            <section class="flex-grow flex flex-col mx-20 justify-center">
-                <h1 class="font-black text-7xl left-enter">
+            <section
+                class="flex-grow flex flex-col sm:mx-20 max-sm:mx-5 justify-center max-sm:gap-8"
+            >
+                <h1 class="font-black text-5xl sm:text-7xl left-enter">
                     <span class="text-primary">LIQUOR AND FIREARM LAW</span
                     ><br />PROFESSIONAL
                 </h1>
-                <div class="flex justify-between items-center">
+                <div class="flex max-sm:flex-col justify-between items-center">
                     <div
-                        class="flex flex-col text-2xl font-light justify-center gap-8 left-enter"
+                        class="flex flex-col text-2xl max-sm:text-base font-light justify-center gap-8 left-enter"
                     >
                         <p>
                             Martell van Lill consultancy specializes in liquor
@@ -136,7 +141,7 @@
                             clients.<br />
                         </p>
                         <button
-                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-1/3 btn-secondary border-primary rounded-none hover:btn-primary hover:text-info"
+                            class="btn btn-lg lg:btn-lg w-1/3 btn-secondary border-primary rounded-none hover:btn-primary hover:text-info max-sm:m-auto max-sm:w-fit"
                             onclick="document.getElementById('contact-page').scrollIntoView();"
                         >
                             <i class="far fa-handshake text-2xl"></i>
@@ -146,7 +151,7 @@
                     <img
                         src="assets/hero.jpg"
                         alt="Legal legislation liquor law liquor license"
-                        class="w-1/3 self-end mr-36 right-enter"
+                        class="w-1/3 self-end mr-36 right-enter max-sm:hidden"
                     />
                 </div>
                 <!-- <h3
@@ -167,9 +172,9 @@
             class="h-screen flex flex-col justify-start items-start"
         >
             <h1
-                class="font-black text-7xl w-full text-left px-12 pt-12 left-enter"
+                class="font-black text-7xl max-sm:text-6xl w-full text-left px-5 sm:px-12 pt-12 left-enter"
             >
-                <span class="text-primary">OUR</span> SERVICES
+                <span class="text-primary">OUR</span> LIQUOR SERVICES
             </h1>
             <div
                 class="absolute h-screen flex flex-col justify-end items-end right-enter"
@@ -181,10 +186,10 @@
                 />
             </div>
             <div
-                class="flex flex-row w-1/2 items-start justify-start flex-grow pl-12 gap-16 pt-12 left-enter"
+                class="flex flex-row sm:w-1/2 items-start justify-start flex-grow max-sm:px-5 sm:pl-12 gap-16 pt-5 sm:pt-12 left-enter"
             >
                 <div class="flex flex-col gap-8">
-                    <p class="font-light text-2xl">
+                    <p class="font-light text-2xl max-sm:hidden">
                         We seek to provide applicants the best chances of
                         success in any application based on our commitment to
                         address the best interest of the public as a main
@@ -197,14 +202,14 @@
                             checked="checked"
                             class="peer"
                         />
-                        <div class="collapse-title text-xl font-medium">
+                        <div class="collapse-title sm:text-xl font-medium">
                             <i
                                 class="fas fa-glass-cheers text-primary pr-4"
                             ></i>
                             New Applications
                         </div>
                         <div
-                            class="collapse-content pl-16 flex flex-row gap-4 justify-around"
+                            class="collapse-content pl-12 sm:pl-16 flex flex-row gap-4 justify-around max-sm:text-sm"
                         >
                             <ul class="list-disc">
                                 <li>
@@ -239,12 +244,12 @@
                     </div>
                     <div class="collapse collapse-arrow bg-secondary">
                         <input type="radio" name="my-accordion-2" />
-                        <div class="collapse-title text-xl font-medium">
+                        <div class="collapse-title sm:text-xl font-medium">
                             <i class="fas fa-random text-primary pr-4"></i>
                             Secondary Applications
                         </div>
                         <div
-                            class="collapse-content pl-16 flex flex-row gap-4 justify-around"
+                            class="collapse-content pl-12 sm:pl-16 flex flex-row gap-4 justify-around max-sm:text-sm"
                         >
                             <ul class="list-disc">
                                 <li>Extension of premises.</li>
@@ -263,13 +268,15 @@
                     </div>
                     <div class="collapse collapse-arrow bg-secondary">
                         <input type="radio" name="my-accordion-2" />
-                        <div class="collapse-title text-xl font-medium">
+                        <div class="collapse-title sm:text-xl font-medium">
                             <i
                                 class="fas fa-compress-arrows-alt text-primary pr-4"
                             ></i>
                             Minor Applications
                         </div>
-                        <div class="collapse-content pl-16">
+                        <div
+                            class="collapse-content pl-12 sm:pl-16 max-sm:text-sm"
+                        >
                             <ul class="list-disc">
                                 <li>Managers’ appointments and training</li>
                                 <li>Renewal applications</li>
@@ -284,13 +291,15 @@
                             name="my-accordion-2"
                             checked="checked"
                         />
-                        <div class="collapse-title text-xl font-medium">
+                        <div class="collapse-title sm:text-xl font-medium">
                             <i
                                 class="fas fa-times-circle text-primary pr-4"
                             ></i>
                             Non-compliance investigations
                         </div>
-                        <div class="collapse-content pl-16">
+                        <div
+                            class="collapse-content pl-12 sm:pl-16 max-sm:text-sm"
+                        >
                             <div>
                                 <p>
                                     Drafting representations on behalf of
@@ -301,11 +310,13 @@
                     </div>
                     <div class="collapse collapse-arrow bg-secondary">
                         <input type="radio" name="my-accordion-2" />
-                        <div class="collapse-title text-xl font-medium">
+                        <div class="collapse-title sm:text-xl font-medium">
                             <i class="fas fa-search text-primary pr-4"></i>
                             Appeal Tribunal referrals
                         </div>
-                        <div class="collapse-content pl-16">
+                        <div
+                            class="collapse-content pl-12 sm:pl-16 max-sm:text-sm"
+                        >
                             <p>
                                 Prepare and submit appeals to the Appeal
                                 Tribunal in case of unfavorable LLT decisions.
@@ -314,11 +325,13 @@
                     </div>
                     <div class="collapse collapse-arrow bg-secondary">
                         <input type="radio" name="my-accordion-2" />
-                        <div class="collapse-title text-xl font-medium">
+                        <div class="collapse-title sm:text-xl font-medium">
                             <i class="fas fa-fire text-primary pr-4"></i>
                             Additional services
                         </div>
-                        <div class="collapse-content pl-16">
+                        <div
+                            class="collapse-content pl-12 sm:pl-16 max-sm:text-sm"
+                        >
                             <p>Firearm Licenses</p>
                         </div>
                     </div>
@@ -328,7 +341,7 @@
         <div class="h-32"></div>
         <section id="about-page" class="h-screen flex flex-col">
             <h1
-                class="font-black text-7xl w-full text-right px-24 pt-12 right-enter"
+                class="font-black max-sm:text-6xl text-7xl w-full text-right px-5 sm:px-24 pt-12 right-enter"
             >
                 <span class="text-primary">ABOUT</span> US
             </h1>
@@ -338,9 +351,11 @@
                     alt="Martell van Lill Liqour license
                 Weapon license Malmesbury Stellenbosch Cape Town Western Cape
                 Law Consultant"
-                    class="w-1/2"
+                    class="w-1/2 max-sm:hidden"
                 />
-                <div class="place-items-center w-1/2 mx-44 right-enter">
+                <div
+                    class="place-items-center sm:w-1/2 mx-5 sm:mx-44 right-enter"
+                >
                     <div
                         class="h-128 carousel carousel-vertical rounded-box bg-secondary hover:scale-110 transition-all"
                     >
@@ -348,14 +363,16 @@
                             class="carousel-item h-full flex flex-col justify-between items-center"
                         >
                             <div
-                                class="pt-12 px-12 flex flex-row gap-4 items-center justify-center text-3xl"
+                                class="pt-12 px-12 flex flex-row gap-4 items-center justify-center sm:text-3xl text-2xl"
                             >
                                 <i class="fas fa-user-tie"></i>
                                 <h2 class="text-primary text-left font-bold">
                                     Martell van Lill
                                 </h2>
                             </div>
-                            <p class="font-light px-12 text-center text-2xl">
+                            <p
+                                class="font-light px-4 sm:px-12 text-center sm:text-2xl text-xl"
+                            >
                                 <span class="text-primary">Adv.</span> Martell
                                 van Lill has been in the field of liquor
                                 regulation since 1993. <br /><br />
@@ -364,7 +381,7 @@
                                 law obtaining his LLB degree in 2002.
                             </p>
                             <div
-                                class="flex flex-row gap-4 justify-center items-center pb-12 text-2xl"
+                                class="flex flex-row gap-4 justify-center items-center pb-12 sm:text-2xl text-xl"
                             >
                                 <p>Scroll to view more</p>
                                 <i class="fas fa-chevron-down"></i>
@@ -374,14 +391,16 @@
                             class="carousel-item h-full flex flex-col justify-start items-center gap-8"
                         >
                             <div
-                                class="pt-12 px-12 flex flex-row gap-4 items-center justify-center text-3xl"
+                                class="pt-12 px-12 flex flex-row gap-4 items-center justify-center sm:text-3xl text-2xl"
                             >
                                 <i class="fas fa-history"></i>
                                 <h2 class="text-primary text-left font-bold">
                                     Experience
                                 </h2>
                             </div>
-                            <p class="font-light px-12 text-center text-xl">
+                            <p
+                                class="font-light px-4 sm:px-12 text-center sm:text-xl text-sm"
+                            >
                                 Over the past 20 years Martell served as a legal
                                 advisor for the SAPS until 2016 during which he
                                 was very involved in the drafting of National
@@ -410,14 +429,16 @@
                             class="carousel-item h-full flex flex-col justify-between items-center gap-8"
                         >
                             <div
-                                class="pt-12 px-12 flex flex-row gap-4 items-center justify-center text-3xl"
+                                class="pt-12 px-12 flex flex-row gap-4 items-center justify-center sm:text-3xl text-2xl"
                             >
                                 <i class="fas fa-sitemap"></i>
                                 <h2 class="text-primary text-left font-bold">
                                     Versatile
                                 </h2>
                             </div>
-                            <p class="font-light px-12 text-center text-2xl">
+                            <p
+                                class="font-light px-4 sm:px-12 text-center sm:text-2xl text-xl"
+                            >
                                 Martell represented the Western Cape Liquor
                                 Authority at many platforms which included
                                 Provincial Liquor Consultant Forums, Local
@@ -436,14 +457,16 @@
                             class="carousel-item h-full flex flex-col justify-between items-center gap-8"
                         >
                             <div
-                                class="pt-12 px-12 flex flex-row gap-4 items-center justify-center text-3xl"
+                                class="pt-12 px-12 flex flex-row gap-4 items-center justify-center sm:text-3xl text-2xl"
                             >
                                 <i class="fas fa-user-shield"></i>
                                 <h2 class="text-primary text-left font-bold">
                                     Private
                                 </h2>
                             </div>
-                            <p class="font-light px-12 text-center text-2xl">
+                            <p
+                                class="font-light px-4 sm:px-12 text-center sm:text-2xl text-xl"
+                            >
                                 His extensive knowledge and understanding of the
                                 liquor legislation allowed him the opportunity
                                 to pursue his own business in providing a
@@ -461,21 +484,23 @@
                             class="carousel-item h-full flex flex-col justify-between items-center gap-8"
                         >
                             <div
-                                class="pt-12 px-12 flex flex-row gap-4 items-center justify-center text-3xl"
+                                class="pt-12 px-12 flex flex-row gap-4 items-center justify-center sm:text-3xl text-2xl"
                             >
                                 <i class="fas fa-vihara"></i>
                                 <h2 class="text-primary text-left font-bold">
                                     Trust and reliability
                                 </h2>
                             </div>
-                            <p class="font-light px-12 text-center text-2xl">
+                            <p
+                                class="font-light sm:px-12 px-4 text-center sm:text-2xl text-xl"
+                            >
                                 His services are aimed at assisting all
                                 retailers, distributors, micro- and
                                 macro-manufacturers in the management of their
                                 related liquor portfolios.
                             </p>
                             <div
-                                class="flex flex-row gap-4 justify-center items-center pb-12 text-2xl"
+                                class="flex flex-row gap-4 justify-center items-center pb-12 sm:text-2xl text-xl"
                             >
                                 <p>Scroll back up</p>
                                 <i class="fas fa-chevron-up"></i>
@@ -485,13 +510,13 @@
                 </div>
             </div>
         </section>
-        <section id="faq-page" class="h-screen flex flex-col mx-24">
+        <section id="faq-page" class="sm:h-screen flex flex-col mx-5 sm:mx-24">
             <h1
-                class="font-black text-7xl w-full text-left pt-12 mb-12 left-enter"
+                class="font-black text-5xl sm:text-7xl w-full text-left pt-12 mb-12 left-enter"
             >
                 <span class="text-primary">FREQUENTLY</span> ASKED QUESTIONS
             </h1>
-            <div class="flex flex-col flex-grow gap-8 left-enter">
+            <div class="flex flex-col flex-grow gap-4 sm:gap-8 left-enter">
                 <div class="collapse collapse-arrow bg-secondary">
                     <input
                         type="radio"
@@ -500,13 +525,13 @@
                         class="peer"
                     />
                     <div
-                        class="collapse-title text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                        class="collapse-title text-lg sm:text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
                     >
                         Which factors are most important when the Liquor
                         Licensing Tribunal considers license applications?
                     </div>
                     <div
-                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 text-lg"
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 sm:text-lg text-base"
                     >
                         <p>
                             The WCL Act determines that licences may only be
@@ -525,12 +550,12 @@
                 >
                     <input type="radio" name="my-accordion-2" class="peer" />
                     <div
-                        class="collapse-title text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                        class="collapse-title text-lg sm:text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
                     >
                         What is public interest?
                     </div>
                     <div
-                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 text-lg"
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 text-base sm:text-lg"
                     >
                         <p>
                             Public interest is not defined in the WCL Act.
@@ -550,13 +575,13 @@
                 >
                     <input type="radio" name="my-accordion-2" class="peer" />
                     <div
-                        class="collapse-title text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                        class="collapse-title text-lg sm:text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
                     >
                         Are applicants allowed to appear before the tribunal to
                         verbally motivate applications?
                     </div>
                     <div
-                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 text-lg"
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 text-base sm:text-lg"
                     >
                         <p>
                             Since the Covid 19 pandemic, the WCLA adopted a
@@ -576,12 +601,12 @@
                 >
                     <input type="radio" name="my-accordion-2" class="peer" />
                     <div
-                        class="collapse-title text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                        class="collapse-title text-lg sm:text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
                     >
                         Who may comment or object against a license application?
                     </div>
                     <div
-                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 text-lg"
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 text-base sm:text-lg"
                     >
                         <p>
                             Any party who has an interest in the issuing of a
@@ -603,13 +628,13 @@
                 >
                     <input type="radio" name="my-accordion-2" class="peer" />
                     <div
-                        class="collapse-title text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                        class="collapse-title text-lg sm:text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
                     >
                         How long does it take for a license application to be
                         considered?
                     </div>
                     <div
-                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 text-lg"
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 text-base sm:text-lg"
                     >
                         <p>
                             Due to slight changes in legislation, applications
@@ -627,13 +652,13 @@
                 >
                     <input type="radio" name="my-accordion-2" class="peer" />
                     <div
-                        class="collapse-title text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                        class="collapse-title text-lg sm:text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
                     >
                         Does a provincial liquor store/ off-sale licence allow
                         both retail and distribution of liquor?
                     </div>
                     <div
-                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 text-lg"
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 text-base sm:text-lg"
                     >
                         <p>
                             A Constitutional Court decision has confirmed that
@@ -658,13 +683,13 @@
                 >
                     <input type="radio" name="my-accordion-2" class="peer" />
                     <div
-                        class="collapse-title text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
+                        class="collapse-title text-lg sm:text-2xl font-medium peer-checked:bg-primary peer-checked:text-base-100"
                     >
                         Why must a license be displayed at the licensed
                         business?
                     </div>
                     <div
-                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 text-lg"
+                        class="collapse-content peer-checked:bg-primary peer-checked:text-base-100 text-base lg:text-lg"
                     >
                         <p>
                             Firstly, it is an offence to purchase liquor knowing
@@ -680,9 +705,12 @@
                 </div>
             </div>
         </section>
-        <section id="contact-page" class="h-screen flex flex-col mx-24">
+        <section
+            id="contact-page"
+            class="sm:h-screen flex flex-col mx-5 sm:mx-24"
+        >
             <h1
-                class="font-black text-7xl w-full text-left pt-12 mb-12 left-enter"
+                class="font-black text-6xl sm:text-7xl w-full text-left pt-12 mb-12 left-enter"
             >
                 <span class="text-primary">CONTACT</span> US
             </h1>
@@ -738,11 +766,11 @@
                 <img
                     src="assets/contact.jpg"
                     alt="Lawyer Advokaat Martell van Lill MvL consultancy Weapon license liquor license consumption alcohol"
-                    class="w-1/2 right-enter"
+                    class="w-1/2 max-sm:hidden right-enter"
                 />
             </div>
             <div
-                class="flex flex-row justify-around items-center mt-16 right-enter"
+                class="flex flex-col sm:flex-row justify-around items-center mt-16 right-enter max-sm:gap-8 max-sm:pb-12"
             >
                 <div class="flex flex-row items-center text-xl">
                     <i class="fas fa-phone text-primary mr-4"></i> 0764360667
@@ -823,7 +851,7 @@
         </footer>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <script src="../styles/animate.js"></script>
+        <script src="./styles/animate.js"></script>
         <link
             href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap"
             rel="stylesheet"

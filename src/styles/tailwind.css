@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+#logotext {
+    font-family: "Merriweather", serif;
+}
+
+/* define animations */
+@keyframes left-enter {
+    0% {
+        transform: translateX(-50vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes right-enter {
+    0% {
+        transform: translateX(50vh);
+        opacity: 0;
+    }
+    100% {
+        tranform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* define animation classes */
+.left-enter-animation {
+    animation-name: left-enter;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+}
+
+.right-enter-animation {
+    animation-name: right-enter;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+}
