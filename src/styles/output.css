@@ -2941,10 +2941,6 @@ h1,
     padding-right: 1.25rem;
   }
 
-  .max-sm\:pb-12 {
-    padding-bottom: 3rem;
-  }
-
   .max-sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -3001,10 +2997,6 @@ h1,
     flex-direction: row;
   }
 
-  .sm\:gap-8 {
-    gap: 2rem;
-  }
-
   .sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -3027,23 +3019,13 @@ h1,
     padding-top: 1rem;
   }
 
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .sm\:text-6xl {
     font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .sm\:text-7xl {
-    font-size: 4.5rem;
     line-height: 1;
   }
 
@@ -3055,11 +3037,6 @@ h1,
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 }
 
@@ -3087,10 +3064,5 @@ h1,
 
   .lg\:pt-4 {
     padding-top: 1rem;
-  }
-
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 }
