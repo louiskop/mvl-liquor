@@ -2380,7 +2380,7 @@ details.collapse summary::-webkit-details-marker {
 }
 
 .h-128 {
-  height: 32rem;
+  height: 71.6083916vh;
 }
 
 .h-28 {
@@ -2568,6 +2568,11 @@ details.collapse summary::-webkit-details-marker {
   padding-right: 3rem;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2581,11 +2586,6 @@ details.collapse summary::-webkit-details-marker {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
 }
 
 .pb-12 {
@@ -2629,12 +2629,12 @@ details.collapse summary::-webkit-details-marker {
 }
 
 .text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 3.35664vh;
+  line-height: 4.4755vh;
 }
 
 .text-5xl {
-  font-size: 3rem;
+  font-size: 6.71328vh;
   line-height: 1;
 }
 
@@ -2643,44 +2643,34 @@ details.collapse summary::-webkit-details-marker {
   line-height: 1;
 }
 
+.text-7xl {
+  font-size: 10.0699vh;
+  line-height: 1;
+}
+
 .text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 2.23776vh;
+  line-height: 3.35664vh;
 }
 
 .text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 2.5174vh;
+  line-height: 3.91608vh;
 }
 
 .text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 1.95804vh;
+  line-height: 2.797202vh;
 }
 
 .text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 2.7972vh;
+  line-height: 3.9160vh;
 }
 
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
 }
 
 .font-black {
@@ -2967,13 +2957,13 @@ h1,
   }
 
   .max-sm\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 2.23776vh;
+    line-height: 3.35664vh;
   }
 
   .max-sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: 1.95804vh;
+    line-height: 2.797202vh;
   }
 }
 
@@ -3040,33 +3030,23 @@ h1,
   }
 
   .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .sm\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .sm\:text-8xl {
-    font-size: 6rem;
+    font-size: 6.71328vh;
     line-height: 1;
   }
 
   .sm\:text-7xl {
-    font-size: 4.5rem;
+    font-size: 10.0699vh;
     line-height: 1;
+  }
+
+  .sm\:text-lg {
+    font-size: 2.5174vh;
+    line-height: 3.91608vh;
+  }
+
+  .sm\:text-xl {
+    font-size: 2.7972vh;
+    line-height: 3.9160vh;
   }
 }
 
